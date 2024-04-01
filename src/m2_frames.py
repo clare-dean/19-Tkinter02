@@ -5,7 +5,7 @@ import tkinter as tk
 # In this module, all of the _todo_ items will be in one comment because you
 # will be modifying the same block of code as you go.
 #
-# TODO: 1. (1 pt)
+# DONE: 1. (1 pt)
 #
 #   First, create a tkinter window called window.
 #
@@ -15,7 +15,7 @@ import tkinter as tk
 #   Once you have done this, then change the above _TODO_ to DONE.
 #
 #
-# TODO: 2. (2 pts)
+# DONE: 2. (2 pts)
 #
 #   Now, create a frame called frm_a and add a label called lbl_a to it that
 #   contains the text "Frame A".
@@ -25,7 +25,7 @@ import tkinter as tk
 #   Once you have done this, then change the above _TODO_ to DONE.
 #
 #
-# TODO: 3. (2 pts)
+# DONE: 3. (2 pts)
 #
 #   Now, create a frame called frm_b and add a label called lbl_b to it that
 #   contains the text "Frame B".
@@ -50,3 +50,19 @@ import tkinter as tk
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+window = tk.Tk()
+window.title("My Window")
+
+frm_a = tk.Frame(window, bg="white")
+frm_a.pack()
+lbl_a = tk.Label(frm_a, text="Frame A")
+lbl_a.pack()
+
+frm_b = tk.Frame(window, bg="blue", relief=tk.SUNKEN)
+frm_b.pack()  
+lbl_b = tk.Label(frm_b, text="Frame B")
+lbl_b.pack()
+
+window.mainloop()
+
+
